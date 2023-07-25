@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/registrationFragment">
+
+    <fragment
+        android:id="@+id/freeCashFragment"
+        android:name="com.example.mycasino8.view.fragments.FreeCashFragment"
+        android:label="fragment_free_cash"
+        tools:layout="@layout/fragment_free_cash" >
+        <action
+            android:id="@+id/action_freeCashFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.mycasino8.view.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_freeCashFragment"
+            app:destination="@id/freeCashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.mycasino8.view.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_difficultGameFragment"
+            app:destination="@id/difficultGameFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/difficultGameFragment"
+        android:name="com.example.mycasino8.view.fragments.DifficultGameFragment"
+        android:label="fragment_difficult_game"
+        tools:layout="@layout/fragment_difficult_game" >
+        <action
+            android:id="@+id/action_difficultGameFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_difficultGameFragment_to_whoHasMoreFragment"
+            app:destination="@id/whoHasMoreFragment" />
+        <action
+            android:id="@+id/action_difficultGameFragment_to_guessPointsFragment"
+            app:destination="@id/guessPointsFragment" />
+        <action
+            android:id="@+id/action_difficultGameFragment_to_identicalPointsFragment"
+            app:destination="@id/identicalPointsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mycasino8.view.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.mycasino8.view.fragments.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_rulesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whoHasMoreFragment"
+        android:name="com.example.mycasino8.view.fragments.WhoHasMoreFragment"
+        android:label="fragment_who_has_more"
+        tools:layout="@layout/fragment_who_has_more" >
+        <action
+            android:id="@+id/action_whoHasMoreFragment_to_difficultGameFragment"
+            app:destination="@id/difficultGameFragment" />
+        <action
+            android:id="@+id/action_whoHasMoreFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessPointsFragment"
+        android:name="com.example.mycasino8.view.fragments.GuessPointsFragment"
+        android:label="fragment_guess_points"
+        tools:layout="@layout/fragment_guess_points" >
+        <action
+            android:id="@+id/action_guessPointsFragment_to_difficultGameFragment"
+            app:destination="@id/difficultGameFragment" />
+        <action
+            android:id="@+id/action_guessPointsFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identicalPointsFragment"
+        android:name="com.example.mycasino8.view.fragments.IdenticalPointsFragment"
+        android:label="fragment_identical_points"
+        tools:layout="@layout/fragment_identical_points" >
+        <action
+            android:id="@+id/action_identicalPointsFragment_to_difficultGameFragment"
+            app:destination="@id/difficultGameFragment" />
+        <action
+            android:id="@+id/action_identicalPointsFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.mycasino8.view.fragments.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_difficultGameFragment"
+            app:destination="@id/difficultGameFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_whoHasMoreFragment"
+            app:destination="@id/whoHasMoreFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_guessPointsFragment"
+            app:destination="@id/guessPointsFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_identicalPointsFragment"
+            app:destination="@id/identicalPointsFragment" />
+    </fragment>
+</navigation>

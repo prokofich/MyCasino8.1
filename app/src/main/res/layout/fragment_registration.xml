@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.RegistrationFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_reg_img"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/id_reg_tv_title_reg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="REGISTRATION"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_reg1"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/id_reg_cs_et"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/id_reg_cs_et"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/background_ll_reg1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_reg_cs_radiogrup"
+        app:layout_constraintTop_toBottomOf="@id/id_reg_tv_title_reg">
+
+        <EditText
+            android:id="@+id/id_reg_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:hint="enter your name"
+            android:textColor="@color/white">
+        </EditText>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:background="@drawable/background_ll_reg1"
+        android:id="@+id/id_reg_cs_radiogrup"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_reg_button_finish"
+        app:layout_constraintTop_toBottomOf="@id/id_reg_cs_et">
+
+        <RadioButton
+            android:id="@+id/id_reg_radiobutton_male"
+            android:layout_width="0dp"
+            android:buttonTint="@color/white"
+            android:text="male"
+            android:fontFamily="@font/chango"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <RadioButton
+            android:id="@+id/id_reg_radiobutton_female"
+            android:layout_width="0dp"
+            android:text="female"
+            android:fontFamily="@font/chango"
+            android:buttonTint="@color/white"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/id_reg_radiobutton_male"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_reg_button_finish"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="GO"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintTop_toBottomOf="@id/id_reg_cs_radiogrup"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_ll_reg1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

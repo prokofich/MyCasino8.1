@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.SettingsFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_set_img"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/background_ll_menu1"
+        android:id="@+id/id_set_button_change_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="change the background"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_set_et_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:background="@drawable/background_ll_menu1"
+        android:id="@+id/id_set_et_name"
+        android:hint="my name"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_set_cs_switsh"
+        app:layout_constraintTop_toBottomOf="@id/id_set_button_change_background"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_set_cs_switsh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_set_radiogroup"
+        app:layout_constraintTop_toBottomOf="@id/id_set_et_name">
+
+        <TextView
+            android:id="@+id/id_set_tv_black_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BLACK TEXT"
+            android:textSize="20sp"
+            android:fontFamily="@font/chango"
+            android:textColor="@color/white"
+            app:layout_constraintWidth_percent="0.7"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Switch
+            android:id="@+id/id_set_switch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            app:layout_constraintStart_toEndOf="@id/id_set_tv_black_text"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/id_set_radiogroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_set_cs_switsh"
+        app:layout_constraintBottom_toTopOf="@id/id_set_button_menu">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/id_set_iv_img1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.35"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintBottom_toTopOf="@id/id_set_radiobutton1"
+                app:layout_constraintEnd_toStartOf="@id/id_set_iv_img2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RadioButton
+                android:id="@+id/id_set_radiobutton1"
+                android:layout_width="0dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintBottom_toTopOf="@id/id_set_iv_img3"
+                app:layout_constraintStart_toStartOf="@id/id_set_iv_img1"
+                app:layout_constraintEnd_toEndOf="@id/id_set_iv_img1"
+                app:layout_constraintTop_toBottomOf="@id/id_set_iv_img1"/>
+
+
+            <ImageView
+                android:id="@+id/id_set_iv_img2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.35"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/id_set_radiobutton2"
+                app:layout_constraintStart_toEndOf="@id/id_set_iv_img1"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RadioButton
+                android:id="@+id/id_set_radiobutton2"
+                android:layout_width="0dp"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintStart_toStartOf="@id/id_set_iv_img2"
+                app:layout_constraintEnd_toEndOf="@id/id_set_iv_img2"
+                app:layout_constraintBottom_toTopOf="@id/id_set_iv_img4"
+                app:layout_constraintTop_toBottomOf="@id/id_set_iv_img2"/>
+
+            <ImageView
+                android:id="@+id/id_set_iv_img3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.35"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintBottom_toTopOf="@id/id_set_radiobutton3"
+                app:layout_constraintEnd_toStartOf="@id/id_set_iv_img4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_set_radiobutton1"/>
+
+            <RadioButton
+                android:id="@+id/id_set_radiobutton3"
+                android:layout_width="0dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/id_set_iv_img3"
+                app:layout_constraintEnd_toEndOf="@id/id_set_iv_img3"
+                app:layout_constraintTop_toBottomOf="@id/id_set_iv_img3"/>
+
+
+            <ImageView
+                android:id="@+id/id_set_iv_img4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/id_set_radiobutton4"
+                app:layout_constraintWidth_percent="0.35"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/id_set_iv_img3"
+                app:layout_constraintTop_toBottomOf="@id/id_set_radiobutton2"/>
+
+            <RadioButton
+                android:id="@+id/id_set_radiobutton4"
+                android:layout_width="0dp"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/id_set_iv_img4"
+                app:layout_constraintEnd_toEndOf="@id/id_set_iv_img4"
+                app:layout_constraintTop_toBottomOf="@id/id_set_iv_img4"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_set_button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_ll_game_red_1"
+        android:text="MENU"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/id_set_radiogroup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

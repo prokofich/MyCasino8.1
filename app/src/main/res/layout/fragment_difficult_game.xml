@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.DifficultGameFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_dif_img"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_dif_button_3_dice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Game -3 dice-"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_dif_button_identical_points"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/id_dif_price_win_3dice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="price:$10,winnings: $20"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_ll_menu2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.66"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_dif_button_3_dice"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_dif_button_identical_points"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Game -identical dice-"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/id_dif_button_3_dice"
+        app:layout_constraintBottom_toTopOf="@id/id_dif_button_guess_points"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/id_dif_identical_points"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="price:$20,winnings: $50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_ll_menu2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.66"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_dif_button_identical_points"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_dif_button_guess_points"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Game -guess points-"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@id/id_dif_button_identical_points"
+        app:layout_constraintBottom_toTopOf="@id/id_dif_button_menu"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/id_dif_guess_points"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="price:$15,winnings: $50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_ll_menu2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.66"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_dif_button_guess_points"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_dif_button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="MENU"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

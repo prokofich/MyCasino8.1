@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.IdenticalPointsFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_identical_img"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_identical_button_start"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="start"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_identical_iv_img_me_avatar" />
+
+    <TextView
+        android:id="@+id/id_identical_tv_title_game"
+        android:background="#4fc2c1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="-identical dice-"
+        android:fontFamily="@font/chango"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/id_identical_iv_img_me_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_identical_tv_name"
+        app:layout_constraintTop_toBottomOf="@id/id_identical_tv_title_game"/>
+
+    <TextView
+        android:id="@+id/id_identical_tv_name"
+        android:background="@drawable/background_ll_game_red_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="nikita"
+        android:textStyle="italic"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintBottom_toTopOf="@id/id_identical_iv_img_dice1"
+        app:layout_constraintTop_toBottomOf="@id/id_identical_iv_img_me_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/id_identical_iv_img_dice1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toStartOf="@id/id_identical_iv_img_sravnenie"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_identical_button_finish"
+        app:layout_constraintTop_toBottomOf="@id/id_identical_tv_name"/>
+
+    <ImageView
+        android:id="@+id/id_identical_iv_img_sravnenie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintEnd_toStartOf="@id/id_identical_iv_img_dice2"
+        app:layout_constraintStart_toEndOf="@id/id_identical_iv_img_dice1"
+        app:layout_constraintTop_toTopOf="@id/id_identical_iv_img_dice1"
+        app:layout_constraintBottom_toBottomOf="@id/id_identical_iv_img_dice1"/>
+
+
+    <ImageView
+        android:id="@+id/id_identical_iv_img_dice2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_identical_button_finish"
+        app:layout_constraintStart_toEndOf="@id/id_identical_iv_img_sravnenie"
+        app:layout_constraintTop_toBottomOf="@id/id_identical_tv_name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_identical_button_finish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="finish"
+        android:enabled="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

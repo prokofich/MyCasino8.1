@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#4fc2c1"
+    tools:context=".view.fragments.GameOverFragment">
+
+    <TextView
+        android:id="@+id/id_gameover_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Game End"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/id_gameover_iv_img_smile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_gameover_tv_title"/>
+
+    <TextView
+        android:id="@+id/id_gameover_tv_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="win"
+        android:textSize="30sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_gameover_tv_cash"
+        app:layout_constraintTop_toBottomOf="@id/id_gameover_iv_img_smile"/>
+
+    <TextView
+        android:id="@+id/id_gameover_tv_cash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="cash"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_gameover_button_restart"
+        app:layout_constraintTop_toBottomOf="@id/id_gameover_tv_result"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_gameover_button_restart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:text="restart"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toTopOf="@id/id_gameover_button_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_gameover_button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="menu"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

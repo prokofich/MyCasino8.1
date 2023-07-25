@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.WhoHasMoreFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_3dice_button_start"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="start"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_3dice_img"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/id_3dice_tv_title_game"
+        android:background="#4fc2c1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="-3 dice-"
+        android:fontFamily="@font/chango"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_opponent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_tv_title_game"/>
+
+    <TextView
+        android:id="@+id/id_3dice_tv_name_opponent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="nikita"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_opponent"
+        app:layout_constraintBottom_toBottomOf="@id/id_3dice_iv_img_opponent"/>
+
+    <TextView
+        android:id="@+id/id_3dice_tv_points_opponent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_opponent"
+        app:layout_constraintTop_toTopOf="@id/id_3dice_iv_img_opponent"/>
+
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_op1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me1"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_3dice_iv_img_op2"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_opponent"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_op2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me2"
+        app:layout_constraintEnd_toStartOf="@id/id_3dice_iv_img_op3"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_op1"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_opponent"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_op3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me3"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_op2"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_opponent"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_me1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_op1"
+        app:layout_constraintEnd_toStartOf="@id/id_3dice_iv_img_me2"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_me2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_op2"
+        app:layout_constraintEnd_toStartOf="@id/id_3dice_iv_img_me3"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_me1"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_me3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_3dice_iv_img_op3"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_me2"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_iv_img_me"/>
+
+    <ImageView
+        android:id="@+id/id_3dice_iv_img_me"
+        android:layout_marginBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@id/id_3dice_button_finish"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_3dice_tv_name_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="nikita"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_me"
+        app:layout_constraintTop_toTopOf="@id/id_3dice_iv_img_me" />
+
+    <TextView
+        android:id="@+id/id_3dice_tv_points_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toEndOf="@id/id_3dice_iv_img_me"
+        app:layout_constraintBottom_toBottomOf="@id/id_3dice_iv_img_me" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_3dice_button_finish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="finish"
+        android:enabled="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

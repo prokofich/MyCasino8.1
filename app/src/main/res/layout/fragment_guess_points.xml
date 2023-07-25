@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.GuessPointsFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_guesspoints_img"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_start"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="start"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/id_guess_tv_title_game"
+        android:background="#4fc2c1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="-guess points-"
+        android:fontFamily="@font/chango"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/id_guess_iv_img_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_tv_title_game"/>
+
+    <TextView
+        android:id="@+id/id_guess_tv_name_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.07"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="nikita"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:background="@drawable/background_ll_menu1"
+        app:layout_constraintStart_toEndOf="@id/id_guess_iv_img_me"
+        app:layout_constraintTop_toTopOf="@id/id_guess_iv_img_me"
+        app:layout_constraintBottom_toBottomOf="@id/id_guess_iv_img_me"/>
+
+    <ImageView
+        android:id="@+id/id_guess_iv_img_dice1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_guess_iv_img_dice2"
+        app:layout_constraintStart_toEndOf="@id/id_guess_iv_img_dice2"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_iv_img_me"/>
+
+    <ImageView
+        android:id="@+id/id_guess_iv_img_dice2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_iv_img_me"
+        app:layout_constraintStart_toEndOf="@id/id_guess_iv_img_dice1" />
+
+    <TextView
+        android:id="@+id/id_guess_tv_points"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_ll_menu1"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_iv_img_dice2"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="2-3"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_points4"
+        app:layout_constraintEnd_toStartOf="@id/id_guess_button_points2"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_tv_points"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="4-5"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_points5"
+        app:layout_constraintEnd_toStartOf="@id/id_guess_button_points3"
+        app:layout_constraintStart_toEndOf="@id/id_guess_button_points1"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_tv_points"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="6-7"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_points6"
+        app:layout_constraintStart_toEndOf="@id/id_guess_button_points2"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_tv_points"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="8-9"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintEnd_toStartOf="@id/id_guess_button_points5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_finish"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_button_points1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="10"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_finish"
+        app:layout_constraintEnd_toStartOf="@id/id_guess_button_points6"
+        app:layout_constraintStart_toEndOf="@id/id_guess_button_points4"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_button_points2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_points6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="11-12"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:fontFamily="@font/chango"
+        app:layout_constraintWidth_percent="0.23"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintBottom_toTopOf="@id/id_guess_button_finish"
+        app:layout_constraintStart_toEndOf="@id/id_guess_button_points5"
+        app:layout_constraintTop_toBottomOf="@id/id_guess_button_points2"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_guess_button_finish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="finish"
+        android:enabled="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chango"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_ll_game_red_1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
